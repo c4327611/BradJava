@@ -20,35 +20,25 @@ public class hello17 {
 		case 3:
 			p3++;
 			break;
-		case 4:
+		case 4: case 7:
 			p4++;
 			break;
-		case 5:
+		case 5: case 8:
 			p5++;
 			break;
-		case 6:
+		case 6: case 9:
 			p6++;
 			break;
-		case 7:
-			p7++;
-			break;
-		case 8:
-			p8++;
-			break;
-		case 9:
-			p9++;
-			break;
+
 		}
 
 	}
 		System.out.println("1:" + p1 + "次");
 		System.out.println("2:" + p2 + "次");
 		System.out.println("3:" + p3 + "次");
-		System.out.println("4:" + (p4 + p7) + "次");
-		System.out.println("5:" + (p5 + p8) + "次");
-		System.out.println("6:" + (p6 + p9) +"次");
-//		System.out.println("7:" + p7 + "次");
-//		System.out.println("8:" + p8 + "次");
-//		System.out.println("9:" + p9 + "次");
+		System.out.println("4:" + p4 + "次");
+		System.out.println("5:" + p5 + "次");
+		System.out.println("6:" + p6 +"次");
+
 }
 }

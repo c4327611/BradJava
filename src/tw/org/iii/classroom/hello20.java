@@ -7,6 +7,7 @@ public class hello20 {
 		int[] a;
 		int b = 1;
 		a =  new int[b];
+		System.out.println(a[0]);
 
 	}
 

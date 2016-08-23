@@ -2,7 +2,7 @@ package tw.org.iii.classroom;
 
 public class Bike {
 	// 屬性 Field
-     private double speed; //封裝
+     private double speed; //private封裝
      
      //Constructor 建構式.建構值.建構方法 (無傳回值,類別名稱與所在一樣(含大小寫))
      Bike(){

@@ -9,7 +9,7 @@ public class hello18 {
 		int b[];
 		int c; c = 12;
 		a = new int[7]; //a內有7個元素 sysout(a.length)
-		// 宣告.給new代表(int.double.short.char等等)已有預設值0,boolean預設為false
+		// 宣告.給new代表+(int.double.short.char等等)已有預設值0,boolean預設為false
 		a[2] = 12;
 		a[5] = 100;
 		a[6] = 7;
