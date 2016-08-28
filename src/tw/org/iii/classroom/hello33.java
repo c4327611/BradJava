@@ -24,6 +24,7 @@ class hello332 extends hello331 {
 //		super.m1();
 //		System.out.println("hello332:m1()");
 //	} 
+	
 	void m1(int a){
 		super.m1();
 		a++;

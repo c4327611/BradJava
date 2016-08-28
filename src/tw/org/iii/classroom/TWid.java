@@ -37,7 +37,7 @@ public class TWid {
 			temp.append((int)(Math.random()*10));
 		}
 		for (int i=0;i<10;i++){
-			if(isRight(to))
+			if(isRight(to))www
 		
 		id = temp.append
 		}

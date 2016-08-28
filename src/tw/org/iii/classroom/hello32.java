@@ -19,9 +19,9 @@ class hello321 {
 	static { // 
 		System.out.println("hello321:static{}");
 	}
-	hello321(){ //super()
+	hello321(){ 
 		System.out.println("hello321()");}
-	static void m1(){
+	static void m1(){ //void不傳回
 		System.out.println("hello321:m1()");
 		
 	}
