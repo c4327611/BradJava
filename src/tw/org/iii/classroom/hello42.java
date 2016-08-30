@@ -22,8 +22,9 @@ public class hello42 {
 		
 	}catch(TransformException de){
 	}
-		hello422 
-		
+		hello422 obj2 = new hello422();
+		obj2.m1(1);
+	}
 }
 class Bird {
 	int leg;
@@ -60,5 +61,4 @@ class hello422 extends hello421 {
 		}
 		System.out.println("ok");
 	}
-}
 }

@@ -37,13 +37,15 @@ public class TWid {
 			temp.append((int)(Math.random()*10));
 		}
 		for (int i=0;i<10;i++){
-			if(isRight(to))www
-		
-		id = temp.append
+			if (isRight(temp.toString() + i)){
+				id = temp.append(i).toString();
+				break;
+			}
 		}
-	} 
+	}
+	
 	TWid(String id){
-		this.id = id; 
+		this.id = id;
 	}
 	
 	//傳回身分證字串
