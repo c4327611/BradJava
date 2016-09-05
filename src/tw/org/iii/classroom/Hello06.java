@@ -1,6 +1,6 @@
 package tw.org.iii.classroom;
 
-public class Hello6 {
+public class Hello06 {
 
 	public static void main(String[] args) {
 		int Score = (int) (Math.random() * 101);// 0 - 100

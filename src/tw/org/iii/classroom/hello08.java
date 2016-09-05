@@ -1,6 +1,6 @@
 package tw.org.iii.classroom;
 
-public class hello8 {
+public class hello08 {
 
 	public static void main(String[] args) {
 		// 20160820

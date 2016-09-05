@@ -1,6 +1,6 @@
 package tw.org.iii.classroom;
 
-public class Hello2 {
+public class Hello02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

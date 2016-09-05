@@ -1,6 +1,6 @@
 package tw.org.iii.classroom;
 
-public class hello9 {
+public class hello09 {
 
 	public static void main(String[] args) {
 		// switch (只能是byte.short.int.char,有各自範圍值)可+String或Enum

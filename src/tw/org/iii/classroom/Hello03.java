@@ -1,6 +1,6 @@
 package tw.org.iii.classroom;
 
-public class Hello3 {
+public class Hello03 {
 
 	public static void main(String[] args) {
 		// char 2^16 => 0 - 65535 
