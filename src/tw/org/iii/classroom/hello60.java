@@ -9,7 +9,7 @@ public class hello60 {
 
 	public static void main(String[] args) {
 		// 接收
-		byte[] buf = new byte[1024];
+		byte[] buf = new byte[1024]; //byte陣列,1024為隨便給的陣列長度
 		try{
 		DatagramSocket socket = 
 				new DatagramSocket(8888);

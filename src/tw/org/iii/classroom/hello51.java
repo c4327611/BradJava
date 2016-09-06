@@ -31,14 +31,14 @@ public class hello51 extends JFrame {
 		exit = new JButton("Exit");
 		edit = new JTextArea();
 		
-		JScrollPane jsp =new JScrollPane(edit); //建立
+		JScrollPane jsp =new JScrollPane(edit); //把edit塞入jsp,設定UI使其右側有滾動條
 		
 		//setLayout(new FlowLayout()); //JFrame/setLayout/LayoutManager/FlowLayout()
 		setLayout(new BorderLayout()); //java.awt/
 		
 		JPanel top = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		
-		top.add(open);top.add(save);
+		top.add(open);top.add(save);top.add(exit);
 		
 		add(top,BorderLayout.NORTH);
 		add(jsp, BorderLayout.CENTER); //中間
@@ -67,8 +67,10 @@ public class hello51 extends JFrame {
 		// 建立檔案選擇器
 		JFileChooser jfc = new JFileChooser();
 		if (jfc.showOpenDialog(this) ==
-				JFileChooser.APPROVE_OPTION) {
-			openFile = jfc.getSelectedFile();
+				JFileChooser.APPROVE_OPTION) { //CANCEL_OPTION 取消
+			//APPROVE_OPTION 選擇(傳回int) //ERROR_OPTION 有錯誤發生
+			
+			openFile = jfc.getSelectedFile(); //取得上面所選擇的檔案
 			//System.out.println(openFile.getAbsolutePath()); //輸出取得路徑
 			readFlie();
 		}
@@ -80,7 +82,7 @@ public class hello51 extends JFrame {
 		FileReader reader = new FileReader(openFile);
 		int c;
 		while ((c = reader.read()) != -1){
-			edit.append(""+(char)c);
+			edit.append(""+(char)c); //append要字串,用""字串相加即可
 		}
 		
 		reader.close();
@@ -92,7 +94,7 @@ public class hello51 extends JFrame {
 			try{
 			FileWriter writer =
 					new FileWriter(openFile);
-			writer.write(edit.getText());
+			writer.write(edit.getText());  //抓edit上面編寫的東西
 			writer.flush();
 			writer.close();
 			

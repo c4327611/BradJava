@@ -1,13 +1,13 @@
 package tw.Jeff;
 
 import tw.org.iii.classroom.Bike;
+import tw.Jeff.iii01;
 
-class iii021 extends Bike{
+class III021 extends Bike{
 	void myUpSpeed(){
-		upSpeed();
+		upspeed();
 	}
-
 }
-class iii022 extends iii01 {
-	
+class III022 extends iii01{
+
 }

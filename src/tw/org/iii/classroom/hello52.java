@@ -7,14 +7,14 @@ import java.io.InputStreamReader;
 public class hello52 {
 
 	public static void main(String[] args) {
-		//io
+		//io //把excel檔存.csv格式
 		try{
 		FileInputStream fin = 
 				new FileInputStream("dir1/staff.csv");
 		InputStreamReader irs = new InputStreamReader(fin);
 		BufferedReader br = new BufferedReader(irs);
 		
-		String line = br.readLine();
+		String line = br.readLine();  //傳回一個字串
 		String[] row = line.split(","); //切割
 		//System.out.println(row.length);
 		for (String data:row){
