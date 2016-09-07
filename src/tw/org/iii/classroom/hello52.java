@@ -14,9 +14,9 @@ public class hello52 {
 		InputStreamReader irs = new InputStreamReader(fin);
 		BufferedReader br = new BufferedReader(irs);
 		
-		String line = br.readLine();  //傳回一個字串
-		String[] row = line.split(","); //切割
-		//System.out.println(row.length);
+		String line = br.readLine();  //傳回一個字串,未讀到就傳回null(但輸出時不會自動換列)
+		String[] row = line.split(","); //切割,傳回字串陣列,用,隔開
+		//System.out.println(row.length);  //印出row有幾個資料項
 		for (String data:row){
 			//System.out.println(data);
 			while ((data = br.readLine())!=null){
