@@ -9,6 +9,10 @@ import java.io.Serializable;
 public class hello57 {
 
 	public static void main(String[] args) {
+		//猛虎出閘第一題
+		/*物件序列化簡單來說就是將物件變成資料流，可以將物件儲存成檔案，可以永久儲存在硬碟中，而且可以在2台電腦之間傳遞物件能。
+		物件解序列化就是將檔案還原成物件，並拿來使用。*/
+		
 		try{//序列化
 		hello573 obj =new hello573();
 		ObjectOutputStream oout =
