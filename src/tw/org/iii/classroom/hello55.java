@@ -12,7 +12,7 @@ public class hello55 {
 		Student s1 = new Student(new PM(),"David",90,50,75);
 		Student s2 = new Student(new PM(),"Tony",80,70,45);
 		
-		try{
+		try{ //try-multi-catch
 		ObjectOutputStream oout = 
 				new ObjectOutputStream(
 						new FileOutputStream("dir1/student.brad"));
