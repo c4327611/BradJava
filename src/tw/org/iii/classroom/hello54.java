@@ -11,8 +11,8 @@ public class hello54 {
 			DataInputStream din =
 					new DataInputStream(
 							new FileInputStream("dir1/data.dat"));
-			int data = din.readInt();
-			boolean data2 = din.readBoolean();
+			int data = din.readInt(); //先輸出先讀,不能更換順序
+			boolean data2 = din.readBoolean(); 
 			double data3 = din.readDouble();
 			
 			din.close();
