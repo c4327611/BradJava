@@ -11,7 +11,6 @@ public class hello59 {
 
 	public static void main(String[] args) {
 		//send
-		for(int i=0;i<999999;i++);
 		String data = "Hello, World";
 		byte[] sendData = data.getBytes();
 		try {
