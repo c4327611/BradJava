@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class hello63 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// list
 		
 		LinkedList list =new LinkedList();
 		list.add(12);
