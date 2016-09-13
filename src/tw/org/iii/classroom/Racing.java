@@ -11,20 +11,19 @@ import javax.swing.JLabel;
 public class Racing extends JFrame{
 	private JButton go;
 	private JLabel[] lanes;
-	private int cars[];
+	private Car[] cars;
 	private int rank;
 	
-	public Racing(){
+	public Racing() {
 		setLayout(new GridLayout(9, 1));
 		
-		add(go = new JButton("GO"));
-		lanes = new JLabel[8]; 
-		for(int i=0;i<lanes.length;i++){
+		add(go = new JButton("Go!"));
+		lanes = new JLabel[8];
+		for (int i=0; i<lanes.length; i++){
 			add(lanes[i] = new JLabel((i+1) + ". "));
 		}
 		
-		
-		setSize(1024,500);
+		setSize(1024, 480);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
@@ -32,7 +31,6 @@ public class Racing extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				doGo();
-				
 			}
 		});
 	}
@@ -69,8 +67,9 @@ public class Racing extends JFrame{
 		}
 	}
 	private void stopGame(){
-		for (int i=0;i<cars.length;i++){
-			cars[i].inter
+		for (int i=0; i<cars.length; i++){
+			cars[i].interrupt();
+			
 		}
 	}
 	
