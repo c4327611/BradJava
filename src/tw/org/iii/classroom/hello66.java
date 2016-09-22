@@ -82,11 +82,11 @@ public class hello66 extends JFrame{
 	}
 	private void doSave(){
 		BufferedImage bi = 
-			new BufferedImage(painter.getWidth(), 
-					painter.getHeight(), 
+			new BufferedImage(painter.getWidth(), //取得寬度
+					painter.getHeight(), //取得高度
 					BufferedImage.TYPE_INT_ARGB); 
-		Graphics g = bi.createGraphics();
-		painter.paint(g);  //this == JComponent
+		Graphics g = bi.createGraphics(); //呼叫Graphics傳回g
+		painter.paint(g);  //this == JComponent 存檔時會連按鍵一併儲存,因此改用painter
 		g.dispose();
 		try{
 			ImageIO.write(bi,"png",new File("dir1/test.png"));
